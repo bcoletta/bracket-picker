@@ -117,7 +117,7 @@ export class FinalFour {
     if (this.tournament === 'men') {
       matchups = [['east', 'west'], ['midwest', 'south']];
     } else if (this.tournament === 'women') {
-      matchups = [['greenville1', 'seattle4'], ['greenville2', 'seattle3']];
+      matchups = [['albany1', 'portland4'], ['albany2', 'portland3']];
     } else {
       throw new Error('Invalid tournament!');
     }
