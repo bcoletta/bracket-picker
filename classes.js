@@ -1,4 +1,4 @@
-import bracket from './bracket.json' assert { type: "json" }
+import bracket from './bracket.json' with { type: "json" }
 
 export class Bracket {
   constructor(numOfRounds, teams) {
@@ -115,9 +115,9 @@ export class FinalFour {
   simulate() {
     let matchups = [];
     if (this.tournament === 'men') {
-      matchups = [['east', 'west'], ['midwest', 'south']];
+      matchups = [['south', 'east'], ['west', 'midwest']];
     } else if (this.tournament === 'women') {
-      matchups = [['albany1', 'portland4'], ['albany2', 'portland3']];
+      matchups = [['regional1', 'regional2'], ['regional4', 'regional3']];
     } else {
       throw new Error('Invalid tournament!');
     }

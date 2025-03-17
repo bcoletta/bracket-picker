@@ -3,8 +3,8 @@ const tournament = args[0];
 
 if (!['men', 'women'].includes(tournament)) throw new Error('Enter a valid tournament (men, women)');
 
-import menRegions from './regions_men.json' assert { type: "json" };
-import womenRegions from './regions_women.json' assert { type: "json" };
+import menRegions from './regions_men.json' with { type: "json" };
+import womenRegions from './regions_women.json' with { type: "json" };
 import { Bracket, FinalFour, Team } from './classes.js';
 
 const regions = tournament === 'men' ? menRegions : womenRegions;
